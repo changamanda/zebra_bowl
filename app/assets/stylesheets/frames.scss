@@ -3,6 +3,14 @@ body{
   margin-bottom: 2%;
 }
 
+a{
+  color: #15B3D9;
+}
+
+a:hover, a:link, a:hover, a:active{
+  color: #15C9D9;
+}
+
 #side-image{
   background-image: url('bowling.jpeg');
   background-size: cover;
