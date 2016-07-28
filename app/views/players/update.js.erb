@@ -1,0 +1,7 @@
+<% player = JSON.parse(player) %>
+<% frames = JSON.parse(frames) %>
+<% arrays = JSON.parse(arrays) %>
+<% html = escape_javascript(render 'player_frames', locals: {player: player, frames: frames, arrays: arrays}) %>
+
+$('#bowlers-list .row[data-id=<%= player["id"] %>]').replaceWith("<%= html %>");
+$('#bowlers-forms input[type=text]').val("");

@@ -1,0 +1,7 @@
+<% html = escape_javascript(render 'new_player', locals: {id: id}) %>
+$('#bowlers-list').append("<%= html %>");
+
+<% form = escape_javascript(render 'new_player_form', locals: {id: id}) %>
+$('#bowlers-forms').append("<%= form %>");
+
+$('#player_name').val('');

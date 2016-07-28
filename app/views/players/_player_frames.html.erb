@@ -1,0 +1,21 @@
+<div class="row" data-id="<%= locals[:player]["id"]%>">
+  <div class="frame col">
+    <%= locals[:player]["name"] %>
+  </div>
+
+  <% locals[:frames].each_with_index do |frame, index| %>
+    <div class="frame col">
+      <p>
+        <% locals[:arrays][index].each do |move| %>
+          <%= move %>
+        <% end %>
+      </p>
+      <p><%= frame["cumulative_score"] %></p>
+    </div>
+  <% end %>
+
+  <% (10 - locals[:frames].length).times do %>
+    <div class="frame col">
+    </div>
+  <% end %>
+</div>
