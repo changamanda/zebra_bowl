@@ -10,7 +10,8 @@ Zebra Bowl is a bowling scoring service with a web interface built with Ruby on 
 2. `cd zebra_bowl/`
 3. `rake db:create`
 4. `rake db:migrate`
-5. `rails s`
+5. `rake db:seed`
+6. `rails s`
 
 ## Usage
 * Visit `http://localhost:3000/` to start bowling!

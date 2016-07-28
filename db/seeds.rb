@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+game = Game.create(name: 'Groovy Bowling!')
+
+['Austin Powers', 'Dr. Evil'].each do |name|
+  game.players.build({name: name}).save
+end
