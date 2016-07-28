@@ -3,6 +3,14 @@ body{
   margin-bottom: 2%;
 }
 
+#side-image{
+  background-image: url('bowling.jpeg');
+  background-size: cover;
+  background-position: 30%;
+  height: 100%;
+  position: fixed;
+}
+
 form{
   margin: 1%;
 }
@@ -26,7 +34,7 @@ form{
   padding: 1%;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   .row{
     flex-direction: column;
   }
@@ -35,5 +43,9 @@ form{
     width: 90%;
     margin: 0 auto 2%;
     padding: 1%;
+  }
+
+  #side-image{
+    display: none;
   }
 }

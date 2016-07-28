@@ -4,13 +4,19 @@
     <title>Zebra Bowl</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag 'http://bootswatch.com/journal/bootstrap.min.css' %>
+    <%= stylesheet_link_tag 'http://bootswatch.com/darkly/bootstrap.min.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <h1>Zebra Bowl!</h1>
-    <%= yield %>
+    <div class='container-fluid'>
+      <div id='side-image' class='col-md-3'></div>
+      <div class='col-md-3'></div>
+      <div class='col-md-9'>
+        <h1>Zebra Bowl!</h1>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
