@@ -1,0 +1,25 @@
+<h3><%= @game.name %></h3>
+
+<% @players.each do |player| %>
+  <div class="row">
+    <%= render partial: "player_frames", locals: {player: player} %>
+  </div>
+<% end %>
+
+<div class="panel panel-default">
+  <h4>Bowl!</h4>
+  <% @players.each do |player| %>
+    <%= render partial: "player_bowl_form", locals: {player: player, game: @game} %>
+  <% end %>
+</div>
+
+<div class="panel panel-default">
+  <h4>Add a New Player</h4>
+  <%= form_for [@game, Player.new] do |f| %>
+    <%= f.label :name, "Name:" %>
+    <%= f.text_field :name %>
+    <%= f.submit "Add a Player" %>
+  <% end %>
+</div>
+
+<%= link_to("Back to all games!", games_path) %>

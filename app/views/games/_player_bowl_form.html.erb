@@ -1,0 +1,5 @@
+<%= form_tag(game_player_path(game.id, player.id), method: "patch") do %>
+  <%= label_tag(:score, "Bowl for #{player.name}:") %>
+  <%= text_field_tag(:score) %>
+  <%= submit_tag("Bowl!") %>
+<% end %>

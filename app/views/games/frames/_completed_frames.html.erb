@@ -1,0 +1,10 @@
+<% player.frames.sort.each do |frame| %>
+  <div class="frame col">
+    <p>
+      <% frame.to_a.each do |move| %>
+        <%= move %>
+      <% end %>
+    </p>
+    <p><%= frame.cumulative_score %></p>
+  </div>
+<% end %>
