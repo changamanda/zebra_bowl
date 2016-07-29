@@ -21,10 +21,10 @@ Zebra Bowl is a bowling scoring service with a web interface built with Ruby on 
 * Replace bowling forms for all players with a master form that keeps track of the current player
 * Spares should update after the next throw, not the next frame
 * Improve styling for the bowler frames
-* Add AJAX so page does not reload after every form submission
+* Clean up AJAX `js.erb` partials
+* Refactor tests to use factories
 
 ## Contributing
-
 1. Fork it!
 2. Create your feature branch
 3. Commit your changes
