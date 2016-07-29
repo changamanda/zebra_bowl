@@ -3,7 +3,7 @@
 Zebra Bowl is a bowling scoring service with a web interface built with Ruby on Rails.
 
 ## Screenshot
-![Screenshot](http://i.imgur.com/vZnEJds.png)
+![Screenshot](http://i.imgur.com/lwpcbbG.jpg)
 
 ## Installation
 1. Clone the repository: `git clone git@github.com:changamanda/zebra_bowl.git`
