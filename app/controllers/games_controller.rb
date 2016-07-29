@@ -9,8 +9,9 @@ class GamesController < ApplicationController
     respond_to do |format|
       if game.save
         format.html  { redirect_to(games_path) }
+        format.js    { render action: :create, locals: {id: game.id} }
       else
-        format.html  { render :action => "index" }
+        format.html  { render action: :index }
       end
     end
   end
